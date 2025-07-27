@@ -10,5 +10,5 @@ func InitLogger() {
 	logger, _ := zap.NewProduction()
 	Log = logger
 	defer logger.Sync()
-	Log.Info("تم تشغيل التطبيق")
+	Log.Info("The application is Running")
 }

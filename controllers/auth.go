@@ -5,10 +5,10 @@ import (
 	"github.com/golang-jwt/jwt/v4"
 	"time"
 	"os"
-	"github.com/yourname/fiber-jwt-app/database"
-	"github.com/yourname/fiber-jwt-app/models"
+	"github.com/abdoamry/Project-go/database"
+	"github.com/abdoamry/Project-go/models"
 	"golang.org/x/crypto/bcrypt"
-	"gorm.io/gorm"
+
 )
 
 func Register(c *fiber.Ctx) error {

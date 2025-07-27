@@ -1,9 +1,9 @@
 package routes
 
 import (
+	"github.com/abdoamry/Project-go/controllers"
+	middlewares "github.com/abdoamry/Project-go/middleware"
 	"github.com/gofiber/fiber/v2"
-	"github.com/yourname/fiber-jwt-app/controllers"
-	"github.com/yourname/fiber-jwt-app/middlewares"
 )
 
 func SetupRoutes(app *fiber.App) {
@@ -13,6 +13,6 @@ func SetupRoutes(app *fiber.App) {
 	protected := app.Group("/api")
 	protected.Use(middlewares.Protected())
 	protected.Get("/profile", func(c *fiber.Ctx) error {
-		return c.SendString("مرحبا بالمستخدم المحمي")
+		return c.SendString("Welcome Bro ")
 	})
 }
